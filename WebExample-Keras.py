@@ -33,7 +33,7 @@ model.compile(loss='mean_squared_error', optimizer=SGD(lr=.5))
 
 
 print(model.get_weights())
-history = model.fit(X, y, nb_epoch=1)
+history = model.fit(X, y, nb_epoch=100)
 history_dict = history.history
 model.summary()
 print(model.get_weights())
